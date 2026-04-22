@@ -1,0 +1,271 @@
+ hjkl;[<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXUS — Responsive Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── CUSTOM CURSOR ── -->
+  <div id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- ── BACKGROUND ORBS ── -->
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <!-- ── NOISE GRAIN ── -->
+  <div class="grain"></div>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="mainNav">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-dot"></span>
+      NEX<span class="logo-accent">US</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#features" class="nav-link">Features</a></li>
+      <li><a href="#stats" class="nav-link">Metrics</a></li>
+      <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+      <li><a href="#cta" class="nav-link">Contact</a></li>
+    </ul>
+
+    <a href="#cta" class="nav-cta">
+      <span>Get Started</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="#hero"         class="mob-link" data-index="0">Home</a>
+      <a href="#features"     class="mob-link" data-index="1">Features</a>
+      <a href="#stats"        class="mob-link" data-index="2">Metrics</a>
+      <a href="#testimonials" class="mob-link" data-index="3">Reviews</a>
+      <a href="#cta"          class="mob-link" data-index="4">Get Started →</a>
+    </div>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <!-- Floating ambient cards -->
+    <div class="hero-cards" aria-hidden="true">
+      <div class="float-card fc-left">
+        <div class="fc-label">Active Users</div>
+        <div class="fc-value">124K</div>
+        <div class="fc-sub">↑ 18% this month</div>
+      </div>
+      <div class="float-card fc-right">
+        <div class="fc-label">Satisfaction</div>
+        <div class="fc-value">99.2%</div>
+        <div class="fc-sub">From 3.2k reviews</div>
+      </div>
+      <div class="float-card fc-bottom">
+        <div class="fc-label">Uptime SLA</div>
+        <div class="fc-value">99.98%</div>
+        <div class="fc-sub">Guaranteed</div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Task 01 — Interactive Navigation
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Design</span> <span class="word gradient-text">Beyond</span></span>
+        <span class="line"><span class="word">The</span> <span class="word">Ordinary</span></span>
+      </h1>
+
+      <p class="hero-sub">
+        An interactive navigation experience that redefines how interfaces feel —
+        fluid, alive, and meticulously crafted for every human moment.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#features" class="btn-primary">
+          Explore Features
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#stats" class="btn-ghost">View Metrics</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ── -->
+  <section id="features">
+    <div class="section-header">
+      <span class="section-tag reveal">✦ What we offer</span>
+      <h2 class="section-title reveal delay-1">Every detail crafted<br/>with purpose</h2>
+      <p class="section-desc reveal delay-2">We obsess over micro-interactions so you don't have to. Every hover, every click, every transition is intentional and alive.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feat-card reveal">
+        <div class="feat-icon c1">🧭</div>
+        <h3 class="feat-title">Smart Navigation</h3>
+        <p class="feat-desc">Fixed nav that transforms on scroll — transparent glass to frosted blur with animated colour-shifting underlines on hover.</p>
+        <a href="#" class="feat-arrow">Learn more <span>→</span></a>
+      </div>
+      <div class="feat-card reveal delay-1">
+        <div class="feat-icon c2">⚡</div>
+        <h3 class="feat-title">Click Ripples</h3>
+        <p class="feat-desc">Every click spawns a radial ripple that fades beautifully. Custom cursor morphs on hover and press states for tactile feel.</p>
+        <a href="#" class="feat-arrow">Learn more <span>→</span></a>
+      </div>
+      <div class="feat-card reveal delay-2">
+        <div class="feat-icon c3">🎨</div>
+        <h3 class="feat-title">Living Backgrounds</h3>
+        <p class="feat-desc">Gradient orbs breathe and drift behind content with a film-grain overlay creating cinematic depth and atmosphere.</p>
+        <a href="#" class="feat-arrow">Learn more <span>→</span></a>
+      </div>
+      <div class="feat-card reveal delay-3">
+        <div class="feat-icon c4">📱</div>
+        <h3 class="feat-title">Fully Responsive</h3>
+        <p class="feat-desc">Flawless across every device. Mobile menu animates in with staggered reveals and a hamburger that morphs to an X.</p>
+        <a href="#" class="feat-arrow">Learn more <span>→</span></a>
+      </div>
+      <div class="feat-card reveal delay-1">
+        <div class="feat-icon c5">🔮</div>
+        <h3 class="feat-title">Scroll Reveals</h3>
+        <p class="feat-desc">Elements drift into view as you scroll down — staggered, spring-eased, and perfectly timed for maximum delight.</p>
+        <a href="#" class="feat-arrow">Learn more <span>→</span></a>
+      </div>
+      <div class="feat-card reveal delay-2">
+        <div class="feat-icon c6">🌊</div>
+        <h3 class="feat-title">Hover Magnetism</h3>
+        <p class="feat-desc">Buttons and cards subtly attract the cursor, creating a sense of physical gravity that makes the UI feel alive.</p>
+        <a href="#" class="feat-arrow">Learn more <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS ── -->
+  <section id="stats">
+    <div class="stats-inner">
+      <div class="stat-item reveal">
+        <div class="stat-num" data-count="124">0</div>
+        <div class="stat-suffix">K+</div>
+        <div class="stat-label">Active Users</div>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-item reveal delay-1">
+        <div class="stat-num" data-count="99">0</div>
+        <div class="stat-suffix">.2%</div>
+        <div class="stat-label">Satisfaction Rate</div>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-item reveal delay-2">
+        <div class="stat-num" data-count="48">0</div>
+        <div class="stat-suffix">ms</div>
+        <div class="stat-label">Avg. Response</div>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-item reveal delay-3">
+        <div class="stat-num" data-count="12">0</div>
+        <div class="stat-suffix">x</div>
+        <div class="stat-label">Faster Than Average</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section id="testimonials">
+    <span class="section-tag reveal" style="display:block;text-align:center">✦ What people say</span>
+    <h2 class="section-title reveal delay-1" style="text-align:center;margin:0 auto 3.5rem">Loved by designers<br/>& developers</h2>
+
+    <div class="testimonials-track" id="testimonialsTrack">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The navigation animation alone made our conversion rate jump 22%. Clients are obsessed with the scroll behaviour."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#00f5c8,#7b5fff)">AK</div>
+          <div><div class="testi-name">Aria Kim</div><div class="testi-role">Product Designer, Vercel</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I've never seen a landing page feel this alive. The cursor ripple effect is sheer magic. Copied the whole pattern for our SaaS."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#ff3d6e,#ffb800)">MR</div>
+          <div><div class="testi-name">Marco Russo</div><div class="testi-role">Frontend Lead, Linear</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Finally a responsive nav that doesn't feel like an afterthought. The mobile hamburger animation is chef's kiss."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#7b5fff,#00f5c8)">SL</div>
+          <div><div class="testi-name">Sophia Lee</div><div class="testi-role">UX Engineer, Figma</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The floating cards in the hero are pure genius. Subtle enough not to distract, impressive enough to stop scrolling immediately."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#00c2ff,#ff3d6e)">JB</div>
+          <div><div class="testi-name">James Becker</div><div class="testi-role">Creative Director, Stripe</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section id="cta">
+    <div class="cta-box reveal">
+      <div class="cta-glow"></div>
+      <span class="section-tag">✦ Ready to begin?</span>
+      <h2 class="cta-title">Build something<br/><span class="gradient-text">unforgettable</span></h2>
+      <p class="cta-desc">Join thousands of teams already shipping products with interfaces their users actually love.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn-primary">
+          Start for Free
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#features" class="btn-ghost">See the Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">NEX<span style="color:var(--accent1)">US</span></div>
+    <p class="footer-copy">© 2026 Nexus. Crafted with obsession.</p>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Twitter</a>
+      <a href="#">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
