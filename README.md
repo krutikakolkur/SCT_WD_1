@@ -89,12 +89,3 @@ Or simply double-click `index.html` to run it locally.
 
 This project was built as **Task 01** of the **SkillCraft Technology Web Development Internship (SCT_WD)**. The task objective was to create a responsive landing page with an interactive navigation menu that changes style or colour on scroll, along with sticky/fixed positioning.
 
----
-
-
-
----
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
